@@ -66,7 +66,7 @@ $(window).on('load', function() {
    * column in the spreadsheet.
    */
   function determineLayers(points) {
-    var layerNamesFromSpreadsheet = [G];
+    var layerNamesFromSpreadsheet = [];
     var layers = {};
     for (var i in points) {
       var pointLayerNameFromSpreadsheet = points[i].Group;
@@ -84,7 +84,7 @@ $(window).on('load', function() {
     if (layerNamesFromSpreadsheet.length === 0) {
       layers = undefined;
     } else {
-      for (var i in layerNamesFromSpreadsheet) {
+      for (var G in layerNamesFromSpreadsheet) {
         var layerNameFromSpreadsheet = layerNamesFromSpreadsheet[i];
         layers[layerNameFromSpreadsheet] = L.layerGroup();
         layers[layerNameFromSpreadsheet].addTo(map);
