@@ -129,7 +129,9 @@ $(window).on('load', function() {
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
           point['Description']);
 
-
+        if (layers !== undefined && layers.length !== 1) {
+          marker.addTo(layers[point.Group]);
+        }
 
         markerArray.push(marker);
       }
