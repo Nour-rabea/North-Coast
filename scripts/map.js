@@ -132,7 +132,7 @@ $(window).on('load', function() {
           point['Website'] + '</b><br>' +
           point['Brochure'] + '</b><br>' +
           point['Head Offices'])
-        .bindTooltip(point['Tip'],{permanent: true, direction: 'right'});;
+        .bindTooltip(point['Tip'],{permanent: true, direction: 'left'});;
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
@@ -193,8 +193,8 @@ $(window).on('load', function() {
                   .map(Function.prototype.call, String.prototype.trim);
 
     if (displayTable && columns.length > 1) {
-      tableHeight = trySetting('_tableHeight', 40);
-      if (tableHeight < 10 || tableHeight > 90) {tableHeight = 40;}
+      tableHeight = trySetting('_tableHeight', 30);
+      if (tableHeight < 10 || tableHeight > 90) {tableHeight = 30;}
       $('#map').css('height', (100 - tableHeight) + 'vh');
       map.invalidateSize();
 
@@ -904,7 +904,7 @@ $(window).on('load', function() {
    */
   function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
-    var credit = 'View <a href="' + googleDocURL + '" target="_blank">data</a>';
+    var credit = 'View <a href="' + 'https://www.castle-development.com/' + '" target="_blank">data</a>';
     var name = getSetting('_authorName');
     var url = getSetting('_authorURL');
 
