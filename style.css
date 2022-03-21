@@ -14,7 +14,7 @@ body {
 
 h3 {
   margin: 0;
-  font-size: 1.28em;
+  font-size: 1.8em;
   font-family: "Helvetica Neue", Impact;
 }
 
@@ -28,6 +28,8 @@ h6 {
   margin: 0;
   font-size: 1.2em;
   background: black;
+  color: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
 
 .intro-popup .leaflet-popup-tip-container {
