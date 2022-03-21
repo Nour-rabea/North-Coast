@@ -125,9 +125,14 @@ $(window).on('load', function() {
 
       if (point.Latitude !== '' && point.Longitude !== '') {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
-          .bindPopup("<b>" + point['Name'] + '</b><br>' +
+          .bindPopup("<b>" + point['Project'] + '</b><br>' +
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          point['Description']);
+          point['Developer'] + '</b><br>' +
+          point['Hotline'] + '</b><br>' +
+          point['Website'] + '</b><br>' +
+          point['Brochure'] + '</b><br>' +
+          point['Head Offices'])
+        .bindTooltip(point['tip'],{permanent: true, direction: 'right'});;
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
