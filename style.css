@@ -27,6 +27,7 @@ h5 {
 h6 {
   margin: 0;
   font-size: 1.2em;
+  background: black;
 }
 
 .intro-popup .leaflet-popup-tip-container {
