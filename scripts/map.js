@@ -132,7 +132,7 @@ $(window).on('load', function() {
           point['Website'] + '</b><br>' +
           point['Brochure'] + '</b><br>' +
           point['Head Offices'])
-        .bindTooltip(point['tip'],{permanent: true, direction: 'right'});;
+        .bindTooltip(point['Tip'],{permanent: true, direction: 'right'});;
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
