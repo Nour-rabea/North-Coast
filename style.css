@@ -35,7 +35,8 @@ h6 {
 .intro-popup .leaflet-popup-content-wrapper {
   background: 0;
   box-shadow: 0 1px 5px rgba(0,0,0,0.0);
-  position: absolute;
+  position: inherit;
+  left: -400px;
 }
 
 .intro-popup .leaflet-popup-tip-container {
