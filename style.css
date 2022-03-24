@@ -39,6 +39,10 @@ h6 {
   left: -400px;
 }
 
+.intro-popup .leaflet-popup-content {
+  min-width: 700px;
+}
+
 .intro-popup .leaflet-popup-tip-container {
   width: 0;
   height: 0;
