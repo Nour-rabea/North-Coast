@@ -266,7 +266,7 @@ $(window).on('load', function() {
     return group;
   }
   
-  var table = getseting('_initLat');
+  var table = getseting(('_points'));
   tablerows.onclick = function zoom() {
     var lat = map.getCenter().lat, latSet = false;
     var lon = map.getCenter().lng, lonSet = false;
