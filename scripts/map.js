@@ -265,6 +265,15 @@ $(window).on('load', function() {
     completePoints = true;
     return group;
   }
+  
+  var table = getseting('_initLat');
+  tablerows.onclick = function zoom() {
+    var lat = map.getCenter().lat, latSet = false;
+    var lon = map.getCenter().lng, lonSet = false;
+    var zoom = 12, zoomSet = false;
+    var center;
+  }
+
 
   var polygon = 0; // current active polygon
   var layer = 0; // number representing current layer among layers in legend
